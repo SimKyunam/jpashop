@@ -9,9 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface OrderRepository extends JpaRepository<Order, Long>,
-        JpaSpecificationExecutor<Order> {
+public interface OrderRepository
+        extends JpaRepository<Order, Long>, JpaSpecificationExecutor<Order> {
 
-    Order findOne(Long orderId);
-    List<Order> findAll(OrderSearch orderSearch);
 }

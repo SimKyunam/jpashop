@@ -74,9 +74,9 @@ public class Order {
     }
 
     //==연관관계 메서드==//
-    public void setMember(Member shopMember) {
-        this.shopMember = shopMember;
-        shopMember.getOrders().add(this);
+    public void setMember(Member member) {
+        this.member = member;
+        member.getOrders().add(this);
     }
 
     public void addOrderItem(OrderItem orderItem) {

@@ -20,7 +20,7 @@ public class Member {
     @Embedded
     private Address address;
 
-    @OneToMany(mappedBy = "shopMember")
+    @OneToMany(mappedBy = "member")
     @ToString.Exclude
     private List<Order> orders = new ArrayList<Order>();
 }
